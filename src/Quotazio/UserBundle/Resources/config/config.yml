@@ -1,0 +1,34 @@
+fos_user:
+    db_driver: orm
+    firewall_name: main
+    user_class: Quotazio\UserBundle\Entity\User
+    service:
+        user_manager: pugx_user_manager
+
+pugx_multi_user:
+  users:
+    user_private:
+        entity:
+          class: Quotazio\UserBundle\Entity\UserPrivate
+#          factory:
+        registration:
+          form:
+            type: Quotazio\UserBundle\Form\Type\RegistrationUserOneFormType
+            name: fos_user_registration_form
+            validation_groups:  [Registration, Default]
+          template: QuotazioUserBundle:Registration:user_one.form.html.twig
+        profile:
+          form:
+            type: Quotazio\UserBundle\Form\Type\ProfileUserOneFormType
+            name: fos_user_profile_form
+            validation_groups:  [Profile, Default]
+    user_company:
+        entity:
+          class: Quotazio\UserBundle\Entity\UserCompany
+        registration:
+          form:
+            type: Quotazio\UserBundle\Form\Type\RegistrationUserTwoFormType
+          template: QuotazioUserBundle:Registration:user_two.form.html.twig
+        profile:
+          form:
+            type: Quotazio\UserBundle\Form\Type\ProfileUserTwoFormType

@@ -1,0 +1,9 @@
+# Quotazio/UserBundle/Resources/config/routing.yml
+
+user_private_registration:
+    pattern:  /register/user-private
+    defaults: { _controller: QuotazioUserBundle:RegistrationUserPrivate:register }
+
+user_company_registration:
+    pattern:  /register/user-company
+    defaults: { _controller: QuotazioUserBundle:RegistrationUserCompany:register }
