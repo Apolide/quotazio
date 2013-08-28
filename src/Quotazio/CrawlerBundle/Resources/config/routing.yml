@@ -1,0 +1,7 @@
+#quotazio_crawler_trasporti:
+#    pattern:  /crawler/trasporti
+#    defaults: { _controller: QuotazioCrawlerBundle:Trasporti:index, name: 'Trasporti' }
+
+quotazio_crawler_homepage:
+    pattern:  /crawler/{name}
+    defaults: { _controller: QuotazioCrawlerBundle:Default:index, name: 'Guest' }

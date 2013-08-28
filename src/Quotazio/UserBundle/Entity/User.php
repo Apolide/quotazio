@@ -14,10 +14,5 @@ use FOS\UserBundle\Entity\User as BaseUser;
 */
 abstract class User extends BaseUser
 {
-    /**
-    * @ORM\Id
-    * @ORM\Column(type="integer")
-    * @ORM\GeneratedValue(strategy="AUTO")
-    */
-    protected $id;
+
 }

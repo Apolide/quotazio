@@ -1,3 +1,13 @@
+quotazio_finder:
+    resource: "@QuotazioFinderBundle/Resources/config/routing.yml"
+    prefix:   /
+
+quotazio_crawler:
+    resource: "@QuotazioCrawlerBundle/Resources/config/routing.yml"
+    prefix:   /
+
+#Quotazio/UserBundle/Resources/config/routing.yml
+
 # Internal routing configuration to handle ESI
 # ****** WARNING ******
 # This route should be enabled with caution as it can open a security vulnerability

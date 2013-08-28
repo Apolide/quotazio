@@ -1,0 +1,7 @@
+parameters:
+#    quotazio_finder.example.class: Quotazio\FinderBundle\Example
+
+services:
+#    quotazio_finder.example:
+#        class: %quotazio_finder.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

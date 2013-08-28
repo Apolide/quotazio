@@ -1,0 +1,7 @@
+parameters:
+#    quotazio_crawler.example.class: Quotazio\CrawlerBundle\Example
+
+services:
+#    quotazio_crawler.example:
+#        class: %quotazio_crawler.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

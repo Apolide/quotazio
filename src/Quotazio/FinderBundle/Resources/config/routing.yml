@@ -1,0 +1,7 @@
+quotazio_finder_trasporti:
+    pattern:  /finder/trasporti
+    defaults: { _controller: QuotazioFinderBundle:Trasporti:index, name: 'Trasporti' }
+
+quotazio_finder_homepage:
+    pattern:  /finder/{name}
+    defaults: { _controller: QuotazioFinderBundle:Default:index, name: 'Guest' }

@@ -21,10 +21,12 @@ class AppKernel extends Kernel
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new PUGX\MultiUserBundle\PUGXMultiUserBundle(),
+            new Quotazio\FinderBundle\QuotazioFinderBundle(),
+            new Quotazio\CrawlerBundle\QuotazioCrawlerBundle(),
+            new Quotazio\UserBundle\QuotazioUserBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
-            $bundles[] = new Quotazio\UserBundle\QuotazioUserBundle();
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
